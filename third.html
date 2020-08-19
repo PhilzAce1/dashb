@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ff0ee12b4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>IDEAMASN Interview Test</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li><img src="./img/logo.svg" alt="logo" /></li>
+          <li><img src="./img/Icon-home-fill.svg" alt="home" /> Dashboard</li>
+          <li>
+            <img src="./img/Icon-briefcase-fill.svg" alt="gig" srcset="" /> Gigs
+          </li>
+          <li>
+            <img src="./img/Icon-npm-fill.svg" alt="company nav" /> Company
+          </li>
+
+          <li><img src="./img/Icon-person-fill.svg" alt="person" /> Account</li>
+        </ul>
+      </nav>
+      <section>
+        <header>
+          <div>
+            <div class="search_container">
+              <i class="fas fa-search"></i>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+            </div>
+            <div>
+              <ul>
+                <li><img src="./img/Group 140.svg" alt="" /></li>
+                <li><img src="./img/Icon-email.svg" alt="" /></li>
+                <li><img src="./img/Icon-settings.svg" alt="" /></li>
+                <li><img src="./img/Rectangle 13.png" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3>Gigs</h3>
+            <button class="btn btn_secondary">
+              New gig <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </header>
+        <article>
+          <div id="wrapper">
+            <header><h4>New gig</h4></header>
+            <div>
+              <div class="card card_small">
+                <header>
+                  Basic Data
+                </header>
+                <p>
+                  Documentation
+                </p>
+              </div>
+              <div class="card card_large">
+                <form action="">
+                  <fieldset>
+                    <label for="role"> Role</label>
+                    <input
+                      type="text"
+                      name="role"
+                      id="role"
+                      placeholder="role"
+                    />
+                    <label for="company"> company</label>
+
+                    <input
+                      type="text"
+                      name="company"
+                      id="company"
+                      placeholder="company"
+                    />
+                  </fieldset>
+                  <fieldset id="location">
+                    <legend>Location</legend>
+
+                    <select id="country" name="country"> </select>
+                    <select id="state/City" name="state/City"> </select>
+                    <input list="languages" id="language_id" />
+                    <datalist id="languages">
+                      <option value="html">HTML</option>
+                      <option value="java">Java</option>
+                      <option value="perl">Perl</option>
+                      <option value="php">PHP</option>
+                      <option value="ruby-on-rails">Ruby on Rails</option>
+                    </datalist>
+                  </fieldset>
+                  <fieldset id="tags">
+                      <legend>Add tags</legend>
+                      <input type="text" value="html,input,tag" data-role="tagsinput"></input>
+                  </fieldset>
+                  <div class="btn_buttons">
+                    <button class="btn btn_primary">Back</button>
+                    <button class="btn btn_secondary">Add gig</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+</body>
+</html>
